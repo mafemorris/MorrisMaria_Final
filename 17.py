@@ -9,3 +9,8 @@ plt.plot(np.linspace(0,2,len(t0)), t0, label= "Condicion Inicial")
 plt.plot(np.linspace(0,2,len(t0)), t05, label = "t = 0.5s")
 plt.legend()
 plt.savefig("resultado.png")
+
+plt.figure()
+plt.plot(np.linspace(0,2,len(t0)), t0, label= "Condicion Inicial")
+plt.legend()
+plt.savefig("solo:cond_ini.png")

@@ -25,11 +25,14 @@ def xk(lista):
     return np.array(lis)/N
 
 # fouri = [(1/N)*np.abs(sum([fourier(n,k,N)*manchas[n] for n in range(N)])) for k in range(N)]
-
-plt.plot(np.arange(N), manchas, '-o')
-plt.stem(np.arange(N), xk(manchas))
-plt.xlabel("tiempo(meses)")
+xs = xk(manchas)
+# for i in range(N):
+#     plt.plot(manchas[i]*xs[i]*np.linspace(0,70,70))
+plt.plot(np.arange(N), manchas, '-o', label = "Numero de manchas")
+plt.stem(np.arange(N), xs, label = 'Transformada de Fourier')
+plt.xlabel("tiempo(meses) desde 1990 hasta 1995")
 plt.ylabel("cantidad de manchas")
+plt.legend()
 plt.savefig("solar.png")
 
 

@@ -26,6 +26,6 @@ for i in range(1, N):
     else:
         sigma.append(sigma[-1])
 
-plt.hist(sigma, normed = True)
+plt.hist(sigma, normed = True) #puede ser normed o density
 plt.savefig("sigma.png")
     
