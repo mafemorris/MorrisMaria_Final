@@ -8,7 +8,7 @@ solucion.txt : 17.x
 17.x : 17.cpp solar.png
 	c++ 17.cpp -o 17.x
 
-solar.png : 16.py 
+solar.png : 16.py sigma.png
 	python 16.py
 
 sigma.png : 15.py
